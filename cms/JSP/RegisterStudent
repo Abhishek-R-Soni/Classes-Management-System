@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body style="background-color:powderblue;">
+	<form action="std"  method="post">
+		<h2> <b>Student Registration...</b></h2><br><br>
+		
+		Enter First Name   : <input type="text" name="fname"> <br>
+		Enter Middle Name  : <input type="text" name="mname"> <br>
+		Enter Last  Name   : <input type="text" name="lname"> <br>
+		Gender 			   : <input type="radio" name="gen" value="male"> Male
+			   				 <input type="radio" name="gen" value="female"> Female<br>
+		Student Mob No     : <input type="text" name="stud_mob"> <br>
+		Parent  Mob No     : <input type="text" name="parent_mob"> <br>
+		Address            : <input type="text" style="width:200px; height:50px;" name="address"> <br>
+		Standard           : <input type="text" name="standard"> <br>
+		G-Mail             : <input type="text" name="gmail"> <br>				
+		<input type="submit">
+	</form>
+</body>
+</html>

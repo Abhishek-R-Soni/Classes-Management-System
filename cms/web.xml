@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+
+<servlet>
+	<servlet-name>abc</servlet-name>
+	<servlet-class>com.cms.StudentServlet</servlet-class>
+</servlet>
+
+<servlet>
+	<servlet-name>t1</servlet-name>
+	<servlet-class>com.cms.AdminLoginServlet</servlet-class>
+</servlet>
+
+<servlet>
+	<servlet-name>t2</servlet-name>
+	<servlet-class>com.cms.EventServlet</servlet-class>
+</servlet>
+	
+<servlet>
+	<servlet-name>t3</servlet-name>
+	<servlet-class>com.cms.StudentLoginServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>abc</servlet-name>
+	<url-pattern>/std</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>t1</servlet-name>
+	<url-pattern>/AdminLogin</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>t2</servlet-name>
+	<url-pattern>/event</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>t3</servlet-name>
+	<url-pattern>/home</url-pattern>
+</servlet-mapping>
+
+</web-app>

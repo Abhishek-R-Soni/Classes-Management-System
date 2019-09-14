@@ -1,0 +1,56 @@
+package com.cms;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="student")
+public class StudentPOJO {
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Column(name="id")
+	private int id;
+	
+	@Column(name="fname")
+	private String fname;
+	
+	@Column(name="mname")
+	private String mname;
+	
+	@Column(name="lname")
+	private String lname;
+	
+	@Column(name="gen")
+	private String gen;
+	
+	@Column(name="stud_mob")
+	private String stud_mob;
+	
+	@Column(name="parent_mob")
+	private String parent_mob;
+	
+	@Column(name="address")
+	private String address;
+	
+	@Column(name="standard")
+	private int standard;
+	
+	@Column(name="gmail")
+	private String gmail;
+	
+	public StudentPOJO(String fname, String mname,String lname, String gen, String stud_mob, String parent_mob, String address, int standard, String gmail) {
+		this.fname = fname;
+		this.mname = mname;
+		this.lname = lname;
+		this.gen = gen;
+		this.stud_mob = stud_mob;
+		this.parent_mob = parent_mob;
+		this.standard = standard;
+		this.address = address;
+		this.gmail = gmail;
+	}
+}
